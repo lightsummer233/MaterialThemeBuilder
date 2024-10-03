@@ -111,24 +111,28 @@ public class ValuesAllGenerator extends ValuesGenerator {
         color(error.tone(90), String.format("md_theme_%s_light_errorContainer", name));
         color(error.tone(10), String.format("md_theme_%s_light_onErrorContainer", name));
 
-        color(neutral.tone(98), String.format("md_theme_%s_light_background", name));
+        color(neutralVariant.tone(98), String.format("md_theme_%s_light_background", name));
         color(neutral.tone(10), String.format("md_theme_%s_light_onBackground", name));
-        color(neutral.tone(98), String.format("md_theme_%s_light_surface", name));
+        color(neutralVariant.tone(98), String.format("md_theme_%s_light_surface", name));
         color(neutral.tone(10), String.format("md_theme_%s_light_onSurface", name));
 
-        color(neutral.tone(94), String.format("md_theme_%s_light_container", name));
-        color(neutral.tone(96), String.format("md_theme_%s_light_containerLow", name));
-        color(neutral.tone(100), String.format("md_theme_%s_light_containerLowest", name));
-        color(neutral.tone(92), String.format("md_theme_%s_light_containerHigh", name));
-        color(neutral.tone(90), String.format("md_theme_%s_light_containerHighest", name));
+        color(neutralVariant.tone(94), String.format("md_theme_%s_light_container", name));
+        color(neutralVariant.tone(96), String.format("md_theme_%s_light_containerLow", name));
+        color(neutralVariant.tone(100), String.format("md_theme_%s_light_containerLowest", name));
+        color(neutralVariant.tone(92), String.format("md_theme_%s_light_containerHigh", name));
+        color(neutralVariant.tone(90), String.format("md_theme_%s_light_containerHighest", name));
 
         color(neutralVariant.tone(90), String.format("md_theme_%s_light_surfaceVariant", name));
         color(neutralVariant.tone(30), String.format("md_theme_%s_light_onSurfaceVariant", name));
         color(neutralVariant.tone(50), String.format("md_theme_%s_light_outline", name));
+        color(neutralVariant.tone(80), String.format("md_theme_%s_light_outlineVariant", name));
 
         color(neutral.tone(95), String.format("md_theme_%s_light_inverseOnSurface", name));
         color(neutral.tone(20), String.format("md_theme_%s_light_inverseSurface", name));
         color(primary.tone(80), String.format("md_theme_%s_light_primaryInverse", name));
+
+        color(neutralVariant.tone(98), String.format("md_theme_%s_light_surfaceBright", name));
+        color(neutralVariant.tone(87), String.format("md_theme_%s_light_surfaceDim", name));
 
         // MDC dark colors
         color(primary.tone(80), String.format("md_theme_%s_dark_primary", name));
@@ -151,24 +155,44 @@ public class ValuesAllGenerator extends ValuesGenerator {
         color(error.tone(30), String.format("md_theme_%s_dark_errorContainer", name));
         color(error.tone(90), String.format("md_theme_%s_dark_onErrorContainer", name));
 
-        color(neutral.tone(6), String.format("md_theme_%s_dark_background", name));
+        color(neutralVariant.tone(6), String.format("md_theme_%s_dark_background", name));
         color(neutral.tone(90), String.format("md_theme_%s_dark_onBackground", name));
-        color(neutral.tone(6), String.format("md_theme_%s_dark_surface", name));
-        color(neutral.tone(80), String.format("md_theme_%s_dark_onSurface", name));
+        color(neutralVariant.tone(6), String.format("md_theme_%s_dark_surface", name));
+        color(neutral.tone(90), String.format("md_theme_%s_dark_onSurface", name));
 
-        color(neutral.tone(12), String.format("md_theme_%s_dark_container", name));
-        color(neutral.tone(10), String.format("md_theme_%s_dark_containerLow", name));
-        color(neutral.tone(4), String.format("md_theme_%s_dark_containerLowest", name));
-        color(neutral.tone(17), String.format("md_theme_%s_dark_containerHigh", name));
-        color(neutral.tone(22), String.format("md_theme_%s_dark_containerHighest", name));
+        color(neutralVariant.tone(12), String.format("md_theme_%s_dark_container", name));
+        color(neutralVariant.tone(10), String.format("md_theme_%s_dark_containerLow", name));
+        color(neutralVariant.tone(4), String.format("md_theme_%s_dark_containerLowest", name));
+        color(neutralVariant.tone(17), String.format("md_theme_%s_dark_containerHigh", name));
+        color(neutralVariant.tone(22), String.format("md_theme_%s_dark_containerHighest", name));
 
         color(neutralVariant.tone(30), String.format("md_theme_%s_dark_surfaceVariant", name));
         color(neutralVariant.tone(80), String.format("md_theme_%s_dark_onSurfaceVariant", name));
         color(neutralVariant.tone(60), String.format("md_theme_%s_dark_outline", name));
+        color(neutralVariant.tone(30), String.format("md_theme_%s_dark_outlineVariant", name));
 
         color(neutral.tone(20), String.format("md_theme_%s_dark_inverseOnSurface", name));
         color(neutral.tone(90), String.format("md_theme_%s_dark_inverseSurface", name));
         color(primary.tone(40), String.format("md_theme_%s_dark_primaryInverse", name));
+
+        color(neutralVariant.tone(24), String.format("md_theme_%s_dark_surfaceBright", name));
+        color(neutralVariant.tone(6), String.format("md_theme_%s_dark_surfaceDim", name));
+
+        // Fixed colors
+        color(primary.tone(90), String.format("md_theme_%s_primaryFixed", name));
+        color(primary.tone(80), String.format("md_theme_%s_primaryFixedDim", name));
+        color(primary.tone(10), String.format("md_theme_%s_onPrimaryFixed", name));
+        color(primary.tone(30), String.format("md_theme_%s_onPrimaryFixedVariant", name));
+
+        color(secondary.tone(90), String.format("md_theme_%s_secondaryFixed", name));
+        color(secondary.tone(80), String.format("md_theme_%s_secondaryFixedDim", name));
+        color(secondary.tone(10), String.format("md_theme_%s_onSecondaryFixed", name));
+        color(secondary.tone(30), String.format("md_theme_%s_onSecondaryFixedVariant", name));
+
+        color(tertiary.tone(90), String.format("md_theme_%s_tertiaryFixed", name));
+        color(tertiary.tone(80), String.format("md_theme_%s_tertiaryFixedDim", name));
+        color(tertiary.tone(10), String.format("md_theme_%s_onTertiaryFixed", name));
+        color(tertiary.tone(30), String.format("md_theme_%s_onTertiaryFixedVariant", name));
 
         // MD3 color tokens
         if (extension.isGeneratePalette()) {
@@ -203,14 +227,26 @@ public class ValuesAllGenerator extends ValuesGenerator {
         styleColorRef("colorOnPrimary", String.format("md_theme_%s_light_onPrimary", nameLowerUnderScore));
         styleColorRef("colorPrimaryContainer", String.format("md_theme_%s_light_primaryContainer", nameLowerUnderScore));
         styleColorRef("colorOnPrimaryContainer", String.format("md_theme_%s_light_onPrimaryContainer", nameLowerUnderScore));
+        styleColorRef("colorPrimaryFixed", String.format("md_theme_%s_primaryFixed", nameLowerUnderScore));
+        styleColorRef("colorPrimaryFixedDim", String.format("md_theme_%s_primaryFixedDim", nameLowerUnderScore));
+        styleColorRef("colorOnPrimaryFixed", String.format("md_theme_%s_onPrimaryFixed", nameLowerUnderScore));
+        styleColorRef("colorOnPrimaryFixedVariant", String.format("md_theme_%s_onPrimaryFixedVariant", nameLowerUnderScore));
         styleColorRef("colorSecondary", String.format("md_theme_%s_light_secondary", nameLowerUnderScore));
         styleColorRef("colorOnSecondary", String.format("md_theme_%s_light_onSecondary", nameLowerUnderScore));
         styleColorRef("colorSecondaryContainer", String.format("md_theme_%s_light_secondaryContainer", nameLowerUnderScore));
         styleColorRef("colorOnSecondaryContainer", String.format("md_theme_%s_light_onSecondaryContainer", nameLowerUnderScore));
+        styleColorRef("colorSecondaryFixed", String.format("md_theme_%s_secondaryFixed", nameLowerUnderScore));
+        styleColorRef("colorSecondaryFixedDim", String.format("md_theme_%s_secondaryFixedDim", nameLowerUnderScore));
+        styleColorRef("colorOnSecondaryFixed", String.format("md_theme_%s_onSecondaryFixed", nameLowerUnderScore));
+        styleColorRef("colorOnSecondaryFixedVariant", String.format("md_theme_%s_onSecondaryFixedVariant", nameLowerUnderScore));
         styleColorRef("colorTertiary", String.format("md_theme_%s_light_tertiary", nameLowerUnderScore));
         styleColorRef("colorOnTertiary", String.format("md_theme_%s_light_onTertiary", nameLowerUnderScore));
         styleColorRef("colorTertiaryContainer", String.format("md_theme_%s_light_tertiaryContainer", nameLowerUnderScore));
         styleColorRef("colorOnTertiaryContainer", String.format("md_theme_%s_light_onTertiaryContainer", nameLowerUnderScore));
+        styleColorRef("colorTertiaryFixed", String.format("md_theme_%s_tertiaryFixed", nameLowerUnderScore));
+        styleColorRef("colorTertiaryFixedDim", String.format("md_theme_%s_tertiaryFixedDim", nameLowerUnderScore));
+        styleColorRef("colorOnTertiaryFixed", String.format("md_theme_%s_onTertiaryFixed", nameLowerUnderScore));
+        styleColorRef("colorOnTertiaryFixedVariant", String.format("md_theme_%s_onTertiaryFixedVariant", nameLowerUnderScore));
         styleColorRef("colorError", String.format("md_theme_%s_light_error", nameLowerUnderScore));
         styleColorRef("colorErrorContainer", String.format("md_theme_%s_light_errorContainer", nameLowerUnderScore));
         styleColorRef("colorOnError", String.format("md_theme_%s_light_onError", nameLowerUnderScore));
@@ -218,6 +254,8 @@ public class ValuesAllGenerator extends ValuesGenerator {
         styleColorRef("android:colorBackground", String.format("md_theme_%s_light_surface", nameLowerUnderScore));
         styleColorRef("colorOnBackground", String.format("md_theme_%s_light_onBackground", nameLowerUnderScore));
         styleColorRef("colorSurface", String.format("md_theme_%s_light_surface", nameLowerUnderScore));
+        styleColorRef("colorSurfaceBright", String.format("md_theme_%s_light_surfaceBright", nameLowerUnderScore));
+        styleColorRef("colorSurfaceDim", String.format("md_theme_%s_light_surfaceDim", nameLowerUnderScore));
         styleColorRef("colorSurfaceContainer", String.format("md_theme_%s_light_container", nameLowerUnderScore));
         styleColorRef("colorSurfaceContainerLow", String.format("md_theme_%s_light_containerLow", nameLowerUnderScore));
         styleColorRef("colorSurfaceContainerLowest", String.format("md_theme_%s_light_containerLowest", nameLowerUnderScore));
@@ -227,6 +265,7 @@ public class ValuesAllGenerator extends ValuesGenerator {
         styleColorRef("colorSurfaceVariant", String.format("md_theme_%s_light_surfaceVariant", nameLowerUnderScore));
         styleColorRef("colorOnSurfaceVariant", String.format("md_theme_%s_light_onSurfaceVariant", nameLowerUnderScore));
         styleColorRef("colorOutline", String.format("md_theme_%s_light_outline", nameLowerUnderScore));
+        styleColorRef("colorOutlineVariant", String.format("md_theme_%s_light_outlineVariant", nameLowerUnderScore));
         styleColorRef("colorOnSurfaceInverse", String.format("md_theme_%s_light_inverseOnSurface", nameLowerUnderScore));
         styleColorRef("colorSurfaceInverse", String.format("md_theme_%s_light_inverseSurface", nameLowerUnderScore));
         styleColorRef("colorPrimaryInverse", String.format("md_theme_%s_light_primaryInverse", nameLowerUnderScore));
@@ -277,14 +316,26 @@ public class ValuesAllGenerator extends ValuesGenerator {
         styleColorRef("colorOnPrimary", String.format("md_theme_%s_dark_onPrimary", nameLowerUnderScore));
         styleColorRef("colorPrimaryContainer", String.format("md_theme_%s_dark_primaryContainer", nameLowerUnderScore));
         styleColorRef("colorOnPrimaryContainer", String.format("md_theme_%s_dark_onPrimaryContainer", nameLowerUnderScore));
+        styleColorRef("colorPrimaryFixed", String.format("md_theme_%s_primaryFixed", nameLowerUnderScore));
+        styleColorRef("colorPrimaryFixedDim", String.format("md_theme_%s_primaryFixedDim", nameLowerUnderScore));
+        styleColorRef("colorOnPrimaryFixed", String.format("md_theme_%s_onPrimaryFixed", nameLowerUnderScore));
+        styleColorRef("colorOnPrimaryFixedVariant", String.format("md_theme_%s_onPrimaryFixedVariant", nameLowerUnderScore));
         styleColorRef("colorSecondary", String.format("md_theme_%s_dark_secondary", nameLowerUnderScore));
         styleColorRef("colorOnSecondary", String.format("md_theme_%s_dark_onSecondary", nameLowerUnderScore));
         styleColorRef("colorSecondaryContainer", String.format("md_theme_%s_dark_secondaryContainer", nameLowerUnderScore));
         styleColorRef("colorOnSecondaryContainer", String.format("md_theme_%s_dark_onSecondaryContainer", nameLowerUnderScore));
+        styleColorRef("colorSecondaryFixed", String.format("md_theme_%s_secondaryFixed", nameLowerUnderScore));
+        styleColorRef("colorSecondaryFixedDim", String.format("md_theme_%s_secondaryFixedDim", nameLowerUnderScore));
+        styleColorRef("colorOnSecondaryFixed", String.format("md_theme_%s_onSecondaryFixed", nameLowerUnderScore));
+        styleColorRef("colorOnSecondaryFixedVariant", String.format("md_theme_%s_onSecondaryFixedVariant", nameLowerUnderScore));
         styleColorRef("colorTertiary", String.format("md_theme_%s_dark_tertiary", nameLowerUnderScore));
         styleColorRef("colorOnTertiary", String.format("md_theme_%s_dark_onTertiary", nameLowerUnderScore));
         styleColorRef("colorTertiaryContainer", String.format("md_theme_%s_dark_tertiaryContainer", nameLowerUnderScore));
         styleColorRef("colorOnTertiaryContainer", String.format("md_theme_%s_dark_onTertiaryContainer", nameLowerUnderScore));
+        styleColorRef("colorTertiaryFixed", String.format("md_theme_%s_tertiaryFixed", nameLowerUnderScore));
+        styleColorRef("colorTertiaryFixedDim", String.format("md_theme_%s_tertiaryFixedDim", nameLowerUnderScore));
+        styleColorRef("colorOnTertiaryFixed", String.format("md_theme_%s_onTertiaryFixed", nameLowerUnderScore));
+        styleColorRef("colorOnTertiaryFixedVariant", String.format("md_theme_%s_onTertiaryFixedVariant", nameLowerUnderScore));
         styleColorRef("colorError", String.format("md_theme_%s_dark_error", nameLowerUnderScore));
         styleColorRef("colorErrorContainer", String.format("md_theme_%s_dark_errorContainer", nameLowerUnderScore));
         styleColorRef("colorOnError", String.format("md_theme_%s_dark_onError", nameLowerUnderScore));
@@ -292,6 +343,8 @@ public class ValuesAllGenerator extends ValuesGenerator {
         styleColorRef("android:colorBackground", String.format("md_theme_%s_dark_surface", nameLowerUnderScore));
         styleColorRef("colorOnBackground", String.format("md_theme_%s_dark_onBackground", nameLowerUnderScore));
         styleColorRef("colorSurface", String.format("md_theme_%s_dark_surface", nameLowerUnderScore));
+        styleColorRef("colorSurfaceBright", String.format("md_theme_%s_dark_surfaceBright", nameLowerUnderScore));
+        styleColorRef("colorSurfaceDim", String.format("md_theme_%s_dark_surfaceDim", nameLowerUnderScore));
         styleColorRef("colorSurfaceContainer", String.format("md_theme_%s_dark_container", nameLowerUnderScore));
         styleColorRef("colorSurfaceContainerLow", String.format("md_theme_%s_dark_containerLow", nameLowerUnderScore));
         styleColorRef("colorSurfaceContainerLowest", String.format("md_theme_%s_dark_containerLowest", nameLowerUnderScore));
@@ -301,6 +354,7 @@ public class ValuesAllGenerator extends ValuesGenerator {
         styleColorRef("colorSurfaceVariant", String.format("md_theme_%s_dark_surfaceVariant", nameLowerUnderScore));
         styleColorRef("colorOnSurfaceVariant", String.format("md_theme_%s_dark_onSurfaceVariant", nameLowerUnderScore));
         styleColorRef("colorOutline", String.format("md_theme_%s_dark_outline", nameLowerUnderScore));
+        styleColorRef("colorOutlineVariant", String.format("md_theme_%s_dark_outlineVariant", nameLowerUnderScore));
         styleColorRef("colorOnSurfaceInverse", String.format("md_theme_%s_dark_inverseOnSurface", nameLowerUnderScore));
         styleColorRef("colorSurfaceInverse", String.format("md_theme_%s_dark_inverseSurface", nameLowerUnderScore));
         styleColorRef("colorPrimaryInverse", String.format("md_theme_%s_dark_primaryInverse", nameLowerUnderScore));
