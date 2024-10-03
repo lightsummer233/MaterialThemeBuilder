@@ -9,6 +9,7 @@ dependencies {
     compileOnly(gradleApi())
     compileOnly(libs.android.gradle)
     implementation("com.google.guava:guava:33.3.1-jre")
+    compileOnly("androidx.annotation:annotation:1.8.2")
 }
 
 sourceSets {
@@ -37,7 +38,7 @@ afterEvaluate {
                 artifactId = "gradle-plugin"
 
                 artifact(tasks["sourcesJar"])
-                artifact(tasks["javadocJar"])
+//                artifact(tasks["javadocJar"])
             }
         }
     }
