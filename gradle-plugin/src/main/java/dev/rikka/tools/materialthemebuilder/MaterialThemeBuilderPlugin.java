@@ -4,11 +4,11 @@ import com.android.build.gradle.AppExtension;
 import com.android.build.gradle.BaseExtension;
 import com.android.build.gradle.LibraryExtension;
 import com.android.build.gradle.api.BaseVariant;
+
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
 import org.gradle.api.logging.Logger;
 import org.gradle.api.logging.Logging;
-import org.gradle.api.tasks.SourceTask;
 
 import java.io.File;
 
@@ -22,7 +22,7 @@ public class MaterialThemeBuilderPlugin implements Plugin<Project> {
         var variantNameCapitalized = Util.capitalize(variantName);
 
         {
-            var dir = new File(project.getBuildDir(),
+            var dir = new File(project.getLayout().getBuildDirectory().getAsFile().get(),
                     String.format("generated/materialThemeBuilder/%s/res", variantName));
             var taskName = String.format("generate%sMaterialThemeBuilderRes", variantNameCapitalized);
             var task = project.getTasks().register(taskName,
@@ -33,7 +33,7 @@ public class MaterialThemeBuilderPlugin implements Plugin<Project> {
         }
 
         {
-            var dir = new File(project.getBuildDir(),
+            var dir = new File(project.getLayout().getBuildDirectory().getAsFile().get(),
                     String.format("generated/materialThemeBuilder/%s/java", variantName));
             var taskName = String.format("generate%sMaterialThemeBuilderSource", variantNameCapitalized);
             var task = project.getTasks().register(taskName,

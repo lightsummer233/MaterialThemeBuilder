@@ -133,9 +133,9 @@ public class MaterialTheme {
     public static String getColorStateListFilename(String color, String emphasis) {
         return "m3_text_"
                 + CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, color)
-                + ("".equals(emphasis) ? "" : "_")
+                + (emphasis.isEmpty() ? "" : "_")
                 + CaseFormat.UPPER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, emphasis)
-                + ("".equals(emphasis) ? "" : "_emphasis");
+                + (emphasis.isEmpty() ? "" : "_emphasis");
     }
 
 }

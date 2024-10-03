@@ -1,7 +1,3 @@
-task("clean", type = Delete::class) {
-    delete(buildDir)
-}
-
 subprojects {
     group = "dev.rikka.tools.materialthemebuilder"
     version = "1.4.0"
