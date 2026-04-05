@@ -38,23 +38,17 @@ public class ColorStateListGenerator extends XmlGenerator {
 
     private String getAlpha(boolean isDisabled) {
         if (!isDisabled) {
-            switch (emphasis) {
-                case "High":
-                    return "@dimen/m3_emphasis_high";
-                case "Medium":
-                    return "@dimen/m3_emphasis_medium";
-                default:
-                    return "";
-            }
+            return switch (emphasis) {
+                case "High" -> "@dimen/m3_emphasis_high";
+                case "Medium" -> "@dimen/m3_emphasis_medium";
+                default -> "";
+            };
         } else {
-            switch (emphasis) {
-                case "High":
-                    return "@dimen/m3_emphasis_high_disabled";
-                case "Medium":
-                    return "@dimen/m3_emphasis_medium_disabled";
-                default:
-                    return "@dimen/m3_emphasis_disabled";
-            }
+            return switch (emphasis) {
+                case "High" -> "@dimen/m3_emphasis_high_disabled";
+                case "Medium" -> "@dimen/m3_emphasis_medium_disabled";
+                default -> "@dimen/m3_emphasis_disabled";
+            };
         }
     }
 }

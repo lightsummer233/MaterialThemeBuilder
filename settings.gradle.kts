@@ -17,7 +17,7 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("libs") {
-            val agp = "9.0.1"
+            val agp = "9.1.0"
 
             library("android-gradle", "com.android.tools.build", "gradle").version(agp)
         }
